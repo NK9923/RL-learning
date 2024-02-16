@@ -1,0 +1,151 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5f0ddeb8-22e9-42a7-8bdd-e4eb24b08545</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>utils\testing\testscript.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>RL_forTrading</Name>
+    <RootNamespace>RL_forTrading</RootNamespace>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="utils\MoveFiles\move.py" />
+    <Compile Include="utils\Neural_Networks\CudaTracker.py" />
+    <Compile Include="utils\Neural_Networks\dqn.py" />
+    <Compile Include="Input\test.py" />
+    <Compile Include="RL_forTrading.py" />
+    <Compile Include="utils\Configure.py" />
+    <Compile Include="utils\LaTeX\generateTable.py" />
+    <Compile Include="utils\Logging\Log.py" />
+    <Compile Include="utils\MACD\MACD.py" />
+    <Compile Include="utils\Plotting\plotting.py" />
+    <Compile Include="utils\Plotting\plotting_CL.py" />
+    <Compile Include="utils\trading_env\risk_metrics.py" />
+    <Compile Include="utils\testing\testing.py" />
+    <Compile Include="utils\trading_env\ex_ante_vola.py" />
+    <Compile Include="utils\trading_env\trading_env_test.py" />
+    <Compile Include="utils\training.py" />
+    <Compile Include="utils\testing\testscript.py" />
+    <Compile Include="utils\datadownload.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config\" />
+    <Folder Include="Cpp_implementation\" />
+    <Folder Include="Cpp_implementation\.vscode\" />
+    <Folder Include="Cpp_implementation\test\" />
+    <Folder Include="Input\" />
+    <Folder Include="Input\LaTeX\" />
+    <Folder Include="Input\jsonFiles\" />
+    <Folder Include="outputs\LossTracking\" />
+    <Folder Include="outputs\Portfolio\" />
+    <Folder Include="utils\" />
+    <Folder Include="outputs\" />
+    <Folder Include="utils\Logging\" />
+    <Folder Include="utils\LaTeX\" />
+    <Folder Include="utils\MACD\" />
+    <Folder Include="utils\Neural_Networks\" />
+    <Folder Include="utils\MoveFiles\" />
+    <Folder Include="utils\trading_env\" />
+    <Folder Include="utils\Plotting\" />
+    <Folder Include="utils\testing\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\config.yml" />
+    <Content Include="Cpp_implementation\.vscode\settings.json" />
+    <Content Include="Cpp_implementation\ex_ante_vola.cpp" />
+    <Content Include="Cpp_implementation\ex_ante_vola_FAST.exe" />
+    <Content Include="Cpp_implementation\pybind.cpp" />
+    <Content Include="Cpp_implementation\SP.CSV" />
+    <Content Include="Cpp_implementation\test\calculate_volatility.cpp" />
+    <Content Include="Cpp_implementation\test\calculate_volatility.h" />
+    <Content Include="Cpp_implementation\test\ex_ante_wrapper.cpp" />
+    <Content Include="Input\BL.CSV" />
+    <Content Include="Input\BO.CSV" />
+    <Content Include="Input\BP.CSV" />
+    <Content Include="Input\BTP.CSV" />
+    <Content Include="Input\BTS.CSV" />
+    <Content Include="Input\C.CSV" />
+    <Content Include="Input\CAC.CSV" />
+    <Content Include="Input\CC.CSV" />
+    <Content Include="Input\CD.CSV" />
+    <Content Include="Input\CGB.CSV" />
+    <Content Include="Input\CL.CSV" />
+    <Content Include="Input\CT.CSV" />
+    <Content Include="Input\DA.CSV" />
+    <Content Include="Input\jsonFiles\Dates.json" />
+    <Content Include="Input\jsonFiles\discount_factor_Parameters.json" />
+    <Content Include="Input\DX.CSV" />
+    <Content Include="Input\EBL.CSV" />
+    <Content Include="Input\EBM.CSV" />
+    <Content Include="Input\EBS.CSV" />
+    <Content Include="Input\FC.CSV" />
+    <Content Include="Input\FDX.CSV" />
+    <Content Include="Input\FFI.CSV" />
+    <Content Include="Input\FLG.CSV" />
+    <Content Include="Input\FV.CSV" />
+    <Content Include="Input\GC.CSV" />
+    <Content Include="Input\HO.CSV" />
+    <Content Include="Input\JNI.CSV" />
+    <Content Include="Input\JY.CSV" />
+    <Content Include="Input\KC.CSV" />
+    <Content Include="Input\KW.CSV" />
+    <Content Include="Input\LaTeX\LaTeX_keys.json" />
+    <Content Include="Input\LaTeX\rowNames.json" />
+    <Content Include="Input\LB.CSV" />
+    <Content Include="Input\LC.CSV" />
+    <Content Include="Input\LCO.CSV" />
+    <Content Include="Input\jsonFiles\Learning_Rate_Parameters.json" />
+    <Content Include="Input\LH.CSV" />
+    <Content Include="Input\Markets.csv" />
+    <Content Include="Input\MCU.csv" />
+    <Content Include="Input\MD.CSV" />
+    <Content Include="Input\MNI.csv" />
+    <Content Include="Input\MP.CSV" />
+    <Content Include="Input\MTN.csv" />
+    <Content Include="Input\MZS.csv" />
+    <Content Include="Input\ND.CSV" />
+    <Content Include="Input\NG.CSV" />
+    <Content Include="Input\NOK2.CSV" />
+    <Content Include="Input\O.CSV" />
+    <Content Include="Input\OJ.CSV" />
+    <Content Include="Input\PA.CSV" />
+    <Content Include="Input\PL.CSV" />
+    <Content Include="Input\RR.CSV" />
+    <Content Include="Input\SB.CSV" />
+    <Content Include="Input\SF.CSV" />
+    <Content Include="Input\SI.CSV" />
+    <Content Include="Input\SP.CSV" />
+    <Content Include="Input\jsonFiles\spec_parameters.json" />
+    <Content Include="Input\jsonFiles\Symbols.json" />
+    <Content Include="Input\TF.CSV" />
+    <Content Include="Input\TU.CSV" />
+    <Content Include="Input\TY.CSV" />
+    <Content Include="Input\US.CSV" />
+    <Content Include="Input\VIXSP.csv" />
+    <Content Include="Input\YTC.CSV" />
+    <Content Include="Input\YY.CSV" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

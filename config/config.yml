@@ -1,0 +1,34 @@
+seed : 11
+train_eps : 40
+state_space_dim : 50
+gamma : 0.95
+epsilon_start: 0.90   # start epsilon of e-greedy policy
+epsilon_end : 0.01
+epsilon_decay : 500
+learning_rate: 0.0001
+memory_capacity :  1000
+batch_size : 64
+target_update : 4
+hidden_dim :  128
+Input_Type : ['Name', 'PointValue', 'TickSize','Cross_Rate', 'ContractValue_EUR', 'Close','AdjustedClose', 'Adjusted_Close_EUR', 'ATR','LogRoR', 'RoR']
+
+Dates : [['2011-01-01', '2016-05-01', '2017-05-01'], ['2012-01-01', '2017-05-01', '2018-05-01'], ['2013-01-01', '2018-05-01', '2019-05-01'], ['2014-01-01', '2019-05-01', '2020-05-01']]
+Future_classes : ['FX', 'Commodities ', 'Bonds', 'Equities', 'Testing']
+
+MAX_ACCOUNT_BALANCE : 200000000
+INITIAL_ACCOUNT_BALANCE : 100000000
+TIME_STEP : 300
+Futures : True
+
+TransactionCostFactor : 0.0001
+RiskFreeRate : 1.0
+Margin_requirement : 0.1 
+
+target_vola:
+  Equities: 0.3
+  Bonds: 0.1
+  FX: 0.3
+  Commodities: 2
+  Commodities_Energies: 2
+  Commodities_Metals: 0.6
+  Commodities_Softs: 2

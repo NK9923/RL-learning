@@ -1,0 +1,17 @@
+{
+    "train_eps": 0,
+    "state_space_dim": 0,
+    "action_space_dim": 0,
+    "curr_time": 0,
+    "tau": 0,
+    "softupdate": 0,
+    "gamma": 0,
+    "epsilon_start": 0,
+    "epsilon_end": 0,
+    "epsilon_decay": 0,
+    "lr": 0,
+    "memory_capacity": 0,
+    "batch_size": 0,
+    "target_update": 0,
+    "hidden_dim": 0
+}

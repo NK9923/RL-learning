@@ -1,0 +1,8 @@
+{
+    "Equities": [ "CAC", "FDX", "SP", "ND", "DX", "FFI" ],
+    "Bonds": [ "EBL", "TU", "FV", "TY", "US", "EBS", "BTP", "CGB", "EBM", "YY", "YTC", "FLG" ],
+    "FX": [ "CD", "JNI", "SF", "BP", "JY", "MP" ],
+    "Commodities_Energies": [ "CL", "LCO", "NG", "BO", "HO", "LB" ],
+    "Commodities_Metals": [ "PA", "GC", "SI", "MNI", "MZS", "MTN", "HG", "PL" ],
+    "Commodities_Softs": [ "CC", "C", "DA", "KC", "KW", "OJ", "SB", "RR", "FC", "LH", "LC", "CT", "O", "BL" ]
+}
