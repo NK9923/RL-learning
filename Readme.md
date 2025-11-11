@@ -126,12 +126,3 @@ die Buy and Hold-Strategie geschieht das gleiche. Anschließend werden die LaTeX
 Die Daten enthalten keine vertraulichen Informationen, sollten jedoch ausschließlich für den Zweck dieses speziellen Projekts verwendet werden. 
 Da die Daten sehr umfangreich sind, ist in der Regel keine Weitergabe gestattet. Aus gutem Grund gehen die Daten auch nicht über das Jahr 2020 hinaus.
 
-
-## Dauer:
-
-Auf meinem Rechner hat der Code ein bisschen mehr als eine Stunde gedauert. Allerdings gehört die Hardwarekonfiguration zu den bestehen, die man im Konsumersegment vor einem halben
-Jahr kaufen konnte. Es ist also recht wahrscheinlich, dass der Code wesentlich länger braucht. 
-
-Der Benutzer muss sich im Klaren sein, dass in Summe nicht ein großes Modell, sondern 24 Modell für einen Algorithmus erstellt werden (6 Märkte x 4 Testperioden). In Summe werden
-also 48 modelle kalibriert.
-
